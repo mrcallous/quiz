@@ -26,6 +26,35 @@ code{font-size:.9em;background:#edf3ee;padding:2px 5px;border-radius:4px}pre{ove
 @media(max-width:850px){main{padding:16px 12px 40px}.layout{grid-template-columns:minmax(0,1fr);gap:16px}.contents{position:static;max-height:none}.contents nav{max-height:300px;overflow:auto}.report-header{padding:22px 20px;margin-bottom:16px}h1{font-size:25px}article{padding:22px 18px}h2{font-size:21px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{body{background:white;font-size:11pt}.contents,.back{display:none}.layout{display:block}main{padding:0}.report-header{background:white;color:black;padding:0;border-radius:0}article{padding:0;border:0}.table-scroll{overflow:visible;border:0}table{min-width:0;font-size:9pt}h2,h3{break-after:avoid}tr{break-inside:avoid}a{color:inherit}}
+
+@media screen and (max-width:650px){
+html{scroll-padding-top:92px}
+main{padding:10px 10px 32px}
+.report-header{padding:20px 16px;border-radius:12px;margin-bottom:12px}
+h1{font-size:23px;line-height:1.5;margin-bottom:14px}
+.back{align-items:center;justify-content:center;min-height:44px;font-size:14px;width:100%;padding:9px 12px}
+.layout{gap:12px}
+.contents{position:sticky;top:8px;z-index:5;padding:10px 14px;border-radius:10px;box-shadow:0 3px 14px rgba(22,49,45,.07)}
+.contents summary{min-height:44px;line-height:24px;padding:10px 0;font-size:15px}
+.contents nav{max-height:55vh;overscroll-behavior:contain}
+.contents ul{margin-top:4px}.contents li{margin:0}
+.contents a{display:flex;align-items:center;min-height:44px;padding:9px 0;font-size:14px;line-height:1.65}
+article{padding:18px 14px;border-radius:10px;font-size:16px;line-height:1.9}
+h2{font-size:20px;margin:28px 0 14px;line-height:1.55;padding-top:10px}
+h3{font-size:17px;line-height:1.7}p{margin-bottom:16px}
+ul,ol{padding-left:21px}li{margin:10px 0}
+.table-scroll{overflow:visible;border:0;border-radius:0;margin:18px 0 24px}
+.table-scroll table{display:block;width:100%;min-width:0;font-size:14px;line-height:1.8}
+.table-scroll thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.table-scroll tbody{display:grid;gap:12px;width:100%}
+.table-scroll tr{display:block;min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:8px;background:#fff}
+.table-scroll td{display:grid;grid-template-columns:minmax(76px,28%) minmax(0,1fr);gap:10px;padding:10px;border:0;min-width:0;overflow-wrap:anywhere}
+.table-scroll td+td{border-top:1px solid var(--line)}
+.table-scroll .cell-value{min-width:0}
+.table-scroll td::before{content:attr(data-label);font-weight:650;color:var(--muted);font-size:12px;line-height:2.1}
+.table-scroll td:first-child{background:#e9f2ed;font-weight:650}
+.table-scroll tbody tr:nth-child(even){background:#fff}
+}
 </style></head>
 <body><main><header class="report-header"><h1>六套PMP模拟题核验与16天提分计划</h1><a class="back" href="./">← 返回逐题复盘</a></header>
 <div class="layout"><details class="contents" open><summary>章节目录</summary><nav aria-label="报告章节"><div class="toc">
@@ -59,84 +88,84 @@ code{font-size:.9em;background:#edf3ee;padding:2px 5px;border-radius:4px}pre{ove
 <div class="table-scroll" tabindex="0" role="region" aria-label="报告数据表"><table>
 <thead>
 <tr>
-<th>图题</th>
-<th>你的选择＝题库键</th>
-<th>核验结论</th>
-<th>图中证据／差异</th>
+<th scope="col">图题</th>
+<th scope="col">你的选择＝题库键</th>
+<th scope="col">核验结论</th>
+<th scope="col">图中证据／差异</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>模考（一）·单选14</td>
-<td>A</td>
-<td>图中核心信息支持A，保留原计分</td>
-<td>两图都显示进度因关键交付物审批延迟而受阻、预算正常、整体谨慎。 中文图把英文Risk Level（风险等级）一行写成了人员配置；中文项目名称也与英文不同。目标动作仍应针对进度与既有风险，不能由此推断人员不足。</td>
+<td data-label="图题"><span class="cell-value">模考（一）·单选14</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">A</span></td>
+<td data-label="核验结论"><span class="cell-value">图中核心信息支持A，保留原计分</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">两图都显示进度因关键交付物审批延迟而受阻、预算正常、整体谨慎。 中文图把英文Risk Level（风险等级）一行写成了人员配置；中文项目名称也与英文不同。目标动作仍应针对进度与既有风险，不能由此推断人员不足。</span></td>
 </tr>
 <tr>
-<td>模考（一）·单选60</td>
-<td>A</td>
-<td>结合价值、工作量与可持续影响重新排序，A仍合理</td>
-<td>两图都列优先级、工作量、价值评分及可持续影响；高优先级不等于始终具有最高当前价值。 事项5的可持续影响中文为低，英文为Medium（中）。因此不能用该单元格做精确排序演算；没有改变A这一决策层面的选择。</td>
+<td data-label="图题"><span class="cell-value">模考（一）·单选60</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">A</span></td>
+<td data-label="核验结论"><span class="cell-value">结合价值、工作量与可持续影响重新排序，A仍合理</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">两图都列优先级、工作量、价值评分及可持续影响；高优先级不等于始终具有最高当前价值。 事项5的可持续影响中文为低，英文为Medium（中）。因此不能用该单元格做精确排序演算；没有改变A这一决策层面的选择。</span></td>
 </tr>
 <tr>
-<td>模考（一）·单选152</td>
-<td>A</td>
-<td>原键A保留，但本题不作为干净读图能力证据</td>
-<td>中文图计划成本650000、实际612000，实际比计划少38000；英文图计划820000、实际860000（约+5%），与题干实际略高于计划一致。两图均提示应急储备消耗快、长期收益仍对齐。 中英文成本与储备数字不同；中文成本方向与题干相反，且表列括号38000。中文把收益实现时点/关键里程碑也混译。不能把计划成本直接当EV，从计划减实际推出挣值成本偏差。A在重新权衡支出与长期收益层面仍合理，不能据此判用户错。</td>
+<td data-label="图题"><span class="cell-value">模考（一）·单选152</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">A</span></td>
+<td data-label="核验结论"><span class="cell-value">原键A保留，但本题不作为干净读图能力证据</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">中文图计划成本650000、实际612000，实际比计划少38000；英文图计划820000、实际860000（约+5%），与题干实际略高于计划一致。两图均提示应急储备消耗快、长期收益仍对齐。 中英文成本与储备数字不同；中文成本方向与题干相反，且表列括号38000。中文把收益实现时点/关键里程碑也混译。不能把计划成本直接当EV，从计划减实际推出挣值成本偏差。A在重新权衡支出与长期收益层面仍合理，不能据此判用户错。</span></td>
 </tr>
 <tr>
-<td>模考（二）·单选35</td>
-<td>A</td>
-<td>A仍为合理行动，中文版数据需要复核</td>
-<td>中文EV590000、AC670000，却标CPI1.03；590000/670000≈0.881。英文EV690000、AC670000，690000/670000≈1.030，与图列CPI一致。两图SPI均0.94、预测晚两周。 中文EV使成本超支，英文EV使成本节约，两种成本方向相反；赶工费用中文150000、英文130000也不一致。不能把中文版表格当一致的计算题。</td>
+<td data-label="图题"><span class="cell-value">模考（二）·单选35</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">A</span></td>
+<td data-label="核验结论"><span class="cell-value">A仍为合理行动，中文版数据需要复核</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">中文EV590000、AC670000，却标CPI1.03；590000/670000≈0.881。英文EV690000、AC670000，690000/670000≈1.030，与图列CPI一致。两图SPI均0.94、预测晚两周。 中文EV使成本超支，英文EV使成本节约，两种成本方向相反；赶工费用中文150000、英文130000也不一致。不能把中文版表格当一致的计算题。</span></td>
 </tr>
 <tr>
-<td>模考（二）·单选107</td>
-<td>C</td>
-<td>C得到题干与高概率高影响风险信息支持</td>
-<td>额外/计划外工作为高概率、高影响；建议增员，但表未给出当前实际触发值或增员已批准的信息。 招聘延期阈值中文为10个工作日以上，英文为&gt;5个工作日；风险1、2中文还省略了英文的大于号。不能由建议措施直接推断已经满足执行阈值。</td>
+<td data-label="图题"><span class="cell-value">模考（二）·单选107</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">C</span></td>
+<td data-label="核验结论"><span class="cell-value">C得到题干与高概率高影响风险信息支持</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">额外/计划外工作为高概率、高影响；建议增员，但表未给出当前实际触发值或增员已批准的信息。 招聘延期阈值中文为10个工作日以上，英文为&gt;5个工作日；风险1、2中文还省略了英文的大于号。不能由建议措施直接推断已经满足执行阈值。</span></td>
 </tr>
 <tr>
-<td>模考（二）·单选151</td>
-<td>A</td>
-<td>A得到沟通有效性与参与趋势支持</td>
-<td>两图均显示管理层沟通有效性高、运营中等、社区低；运营与社区参与度下降。 中文重绘图的右侧情绪面板标签不完整、部分条形被截断，不能与英文图逐数等同比较；左侧比例和中部参与趋势仍足以支持针对性调整。</td>
+<td data-label="图题"><span class="cell-value">模考（二）·单选151</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">A</span></td>
+<td data-label="核验结论"><span class="cell-value">A得到沟通有效性与参与趋势支持</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">两图均显示管理层沟通有效性高、运营中等、社区低；运营与社区参与度下降。 中文重绘图的右侧情绪面板标签不完整、部分条形被截断，不能与英文图逐数等同比较；左侧比例和中部参与趋势仍足以支持针对性调整。</span></td>
 </tr>
 <tr>
-<td>模考（三）·单选35</td>
-<td>C</td>
-<td>C得到风险上升与当前仅监控的信息支持</td>
-<td>两图均把供应商可持续合规列为高概率、高影响，当前策略为Monitor（监控）；题干说明发生概率上升。 成本上报阈值英文为≥8%的非计划成本增加，中文为&gt;5%的计划成本增加，数值、边界和成本口径均不同。不能据此判断是否已触发升级。</td>
+<td data-label="图题"><span class="cell-value">模考（三）·单选35</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">C</span></td>
+<td data-label="核验结论"><span class="cell-value">C得到风险上升与当前仅监控的信息支持</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">两图均把供应商可持续合规列为高概率、高影响，当前策略为Monitor（监控）；题干说明发生概率上升。 成本上报阈值英文为≥8%的非计划成本增加，中文为&gt;5%的计划成本增加，数值、边界和成本口径均不同。不能据此判断是否已触发升级。</span></td>
 </tr>
 <tr>
-<td>模考（三）·单选78</td>
-<td>D</td>
-<td>D与题干及英文图相符，中文图无法支持同一趋势结论</td>
-<td>英文图在整体缺陷下降时，可持续类别的后段条形变高；中文图改为第1—12周，整体与可持续类别都总体下降。 两图时间序列、类别条形及里程碑排布不同；中文图缺少题干所述可持续性缺陷上升的核心信号。不能只凭总高度下降忽略局部恶化，也不能把中文图中没有的上升趋势读出来。</td>
+<td data-label="图题"><span class="cell-value">模考（三）·单选78</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">D</span></td>
+<td data-label="核验结论"><span class="cell-value">D与题干及英文图相符，中文图无法支持同一趋势结论</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">英文图在整体缺陷下降时，可持续类别的后段条形变高；中文图改为第1—12周，整体与可持续类别都总体下降。 两图时间序列、类别条形及里程碑排布不同；中文图缺少题干所述可持续性缺陷上升的核心信号。不能只凭总高度下降忽略局部恶化，也不能把中文图中没有的上升趋势读出来。</span></td>
 </tr>
 <tr>
-<td>模考（三）·单选110</td>
-<td>A</td>
-<td>A得到累计变更影响的题干支持</td>
-<td>两图都有多个已批准变更及不同成本、进度影响；单项影响小不代表累计影响小。题干另提供储备和浮时被侵蚀的信息。 ID5进度影响中文为低、英文为中；ID8交付能力收益中文15%—50%、英文5%—15%；ID3与ID7等收益口径或期限也有差异。不能把两图数字混用，更不能仅用低/中/高等级相加算出储备消耗。</td>
+<td data-label="图题"><span class="cell-value">模考（三）·单选110</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">A</span></td>
+<td data-label="核验结论"><span class="cell-value">A得到累计变更影响的题干支持</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">两图都有多个已批准变更及不同成本、进度影响；单项影响小不代表累计影响小。题干另提供储备和浮时被侵蚀的信息。 ID5进度影响中文为低、英文为中；ID8交付能力收益中文15%—50%、英文5%—15%；ID3与ID7等收益口径或期限也有差异。不能把两图数字混用，更不能仅用低/中/高等级相加算出储备消耗。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选50</td>
-<td>D</td>
-<td>D仍为给定选项中的合理选择</td>
-<td>实际收入曲线斜率小于预期，差距随周数扩大；结合题干交易量影响收入，增加交易产出量优于仅改预期或增加成本。 图只显示收入趋势，不提供单位价格、交易量或数据提取量明细，不能据图定量判断各因素贡献或增加多少产出即可达标。</td>
+<td data-label="图题"><span class="cell-value">冲刺·单选50</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">D</span></td>
+<td data-label="核验结论"><span class="cell-value">D仍为给定选项中的合理选择</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">实际收入曲线斜率小于预期，差距随周数扩大；结合题干交易量影响收入，增加交易产出量优于仅改预期或增加成本。 图只显示收入趋势，不提供单位价格、交易量或数据提取量明细，不能据图定量判断各因素贡献或增加多少产出即可达标。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选98</td>
-<td>A</td>
-<td>按C为成本绩效、S为进度绩效的题意，A得到图支持</td>
-<td>最新第6周C约1.1、S约0.7；成本绩效在1以上而进度绩效在1以下，对应预算节约且进度落后。 图没有完整写出C/S缩写图例，解释沿用本题成本/进度绩效语境；不把缩写约定推广到任意图表。</td>
+<td data-label="图题"><span class="cell-value">冲刺·单选98</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">A</span></td>
+<td data-label="核验结论"><span class="cell-value">按C为成本绩效、S为进度绩效的题意，A得到图支持</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">最新第6周C约1.1、S约0.7；成本绩效在1以上而进度绩效在1以下，对应预算节约且进度落后。 图没有完整写出C/S缩写图例，解释沿用本题成本/进度绩效语境；不把缩写约定推广到任意图表。</span></td>
 </tr>
 <tr>
-<td>冲刺·多选2（卷内173）</td>
-<td>BE</td>
-<td>BE得到状态表支持</td>
-<td>表中进度延期两周、预算存在风险、风险与问题活跃，却把整体标正常；前端开发长期休假却把资源标正常。B、E直接纠正这两处状态与说明冲突。 质量备注提及1个问题，但未给出严重性或越过质量阈值的证据，不足以仅据缺陷数量选择C；预算已标风险，不能更新为正常。</td>
+<td data-label="图题"><span class="cell-value">冲刺·多选2（卷内173）</span></td>
+<td data-label="你的选择＝题库键"><span class="cell-value">BE</span></td>
+<td data-label="核验结论"><span class="cell-value">BE得到状态表支持</span></td>
+<td data-label="图中证据／差异"><span class="cell-value">表中进度延期两周、预算存在风险、风险与问题活跃，却把整体标正常；前端开发长期休假却把资源标正常。B、E直接纠正这两处状态与说明冲突。 质量备注提及1个问题，但未给出严重性或越过质量阈值的证据，不足以仅据缺陷数量选择C；预算已标风险，不能更新为正常。</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -150,69 +179,69 @@ code{font-size:.9em;background:#edf3ee;padding:2px 5px;border-radius:4px}pre{ove
 <div class="table-scroll" tabindex="0" role="region" aria-label="报告数据表"><table>
 <thead>
 <tr>
-<th>试卷</th>
-<th>逐题答对</th>
-<th>逐题答错</th>
-<th>正确率</th>
-<th>单选正确</th>
-<th>多选正确</th>
-<th>导出记录中的页面答对数</th>
+<th scope="col">试卷</th>
+<th scope="col">逐题答对</th>
+<th scope="col">逐题答错</th>
+<th scope="col">正确率</th>
+<th scope="col">单选正确</th>
+<th scope="col">多选正确</th>
+<th scope="col">导出记录中的页面答对数</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>模考（一）</td>
-<td>110</td>
-<td>70</td>
-<td>61.11%</td>
-<td>105/172</td>
-<td>5/8</td>
-<td>111</td>
+<td data-label="试卷"><span class="cell-value">模考（一）</span></td>
+<td data-label="逐题答对"><span class="cell-value">110</span></td>
+<td data-label="逐题答错"><span class="cell-value">70</span></td>
+<td data-label="正确率"><span class="cell-value">61.11%</span></td>
+<td data-label="单选正确"><span class="cell-value">105/172</span></td>
+<td data-label="多选正确"><span class="cell-value">5/8</span></td>
+<td data-label="导出记录中的页面答对数"><span class="cell-value">111</span></td>
 </tr>
 <tr>
-<td>模考（二）</td>
-<td>119</td>
-<td>61</td>
-<td>66.11%</td>
-<td>117/170</td>
-<td>2/10</td>
-<td>120</td>
+<td data-label="试卷"><span class="cell-value">模考（二）</span></td>
+<td data-label="逐题答对"><span class="cell-value">119</span></td>
+<td data-label="逐题答错"><span class="cell-value">61</span></td>
+<td data-label="正确率"><span class="cell-value">66.11%</span></td>
+<td data-label="单选正确"><span class="cell-value">117/170</span></td>
+<td data-label="多选正确"><span class="cell-value">2/10</span></td>
+<td data-label="导出记录中的页面答对数"><span class="cell-value">120</span></td>
 </tr>
 <tr>
-<td>模考（三）</td>
-<td>125</td>
-<td>55</td>
-<td>69.44%</td>
-<td>121/171</td>
-<td>4/9</td>
-<td>124</td>
+<td data-label="试卷"><span class="cell-value">模考（三）</span></td>
+<td data-label="逐题答对"><span class="cell-value">125</span></td>
+<td data-label="逐题答错"><span class="cell-value">55</span></td>
+<td data-label="正确率"><span class="cell-value">69.44%</span></td>
+<td data-label="单选正确"><span class="cell-value">121/171</span></td>
+<td data-label="多选正确"><span class="cell-value">4/9</span></td>
+<td data-label="导出记录中的页面答对数"><span class="cell-value">124</span></td>
 </tr>
 <tr>
-<td>强化（一）</td>
-<td>114</td>
-<td>66</td>
-<td>63.33%</td>
-<td>114/180</td>
-<td>无多选</td>
-<td>未单列</td>
+<td data-label="试卷"><span class="cell-value">强化（一）</span></td>
+<td data-label="逐题答对"><span class="cell-value">114</span></td>
+<td data-label="逐题答错"><span class="cell-value">66</span></td>
+<td data-label="正确率"><span class="cell-value">63.33%</span></td>
+<td data-label="单选正确"><span class="cell-value">114/180</span></td>
+<td data-label="多选正确"><span class="cell-value">无多选</span></td>
+<td data-label="导出记录中的页面答对数"><span class="cell-value">未单列</span></td>
 </tr>
 <tr>
-<td>强化（二）</td>
-<td>124</td>
-<td>56</td>
-<td>68.89%</td>
-<td>124/180</td>
-<td>无多选</td>
-<td>未单列</td>
+<td data-label="试卷"><span class="cell-value">强化（二）</span></td>
+<td data-label="逐题答对"><span class="cell-value">124</span></td>
+<td data-label="逐题答错"><span class="cell-value">56</span></td>
+<td data-label="正确率"><span class="cell-value">68.89%</span></td>
+<td data-label="单选正确"><span class="cell-value">124/180</span></td>
+<td data-label="多选正确"><span class="cell-value">无多选</span></td>
+<td data-label="导出记录中的页面答对数"><span class="cell-value">未单列</span></td>
 </tr>
 <tr>
-<td>冲刺</td>
-<td>108</td>
-<td>72</td>
-<td>60.00%</td>
-<td>103/171</td>
-<td>5/9</td>
-<td>未单列</td>
+<td data-label="试卷"><span class="cell-value">冲刺</span></td>
+<td data-label="逐题答对"><span class="cell-value">108</span></td>
+<td data-label="逐题答错"><span class="cell-value">72</span></td>
+<td data-label="正确率"><span class="cell-value">60.00%</span></td>
+<td data-label="单选正确"><span class="cell-value">103/171</span></td>
+<td data-label="多选正确"><span class="cell-value">5/9</span></td>
+<td data-label="导出记录中的页面答对数"><span class="cell-value">未单列</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -225,31 +254,31 @@ code{font-size:.9em;background:#edf3ee;padding:2px 5px;border-radius:4px}pre{ove
 <div class="table-scroll" tabindex="0" role="region" aria-label="报告数据表"><table>
 <thead>
 <tr>
-<th>对应题目</th>
-<th>考点</th>
-<th>作答情况</th>
+<th scope="col">对应题目</th>
+<th scope="col">考点</th>
+<th scope="col">作答情况</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>模考（一）·单选8（ID 181465） / 模考（二）·单选103（ID 181740）</td>
-<td>迭代评审不满，先理解关切</td>
-<td>两次均答对</td>
+<td data-label="对应题目"><span class="cell-value">模考（一）·单选8（ID 181465） / 模考（二）·单选103（ID 181740）</span></td>
+<td data-label="考点"><span class="cell-value">迭代评审不满，先理解关切</span></td>
+<td data-label="作答情况"><span class="cell-value">两次均答对</span></td>
 </tr>
 <tr>
-<td>模考（二）·单选55（ID 181692） / 强化（二）·单选138（ID 175570）</td>
-<td>包装规格变更，PO的产品决策权</td>
-<td>两次均D→B，持续误判</td>
+<td data-label="对应题目"><span class="cell-value">模考（二）·单选55（ID 181692） / 强化（二）·单选138（ID 175570）</span></td>
+<td data-label="考点"><span class="cell-value">包装规格变更，PO的产品决策权</span></td>
+<td data-label="作答情况"><span class="cell-value">两次均D→B，持续误判</span></td>
 </tr>
 <tr>
-<td>模考（一）·单选109（ID 181566） / 强化（二）·单选27（ID 175459）</td>
-<td>故事持续未完成且无阻碍，拆分与DoR</td>
-<td>一错一对，稳定性需新题验证</td>
+<td data-label="对应题目"><span class="cell-value">模考（一）·单选109（ID 181566） / 强化（二）·单选27（ID 175459）</span></td>
+<td data-label="考点"><span class="cell-value">故事持续未完成且无阻碍，拆分与DoR</span></td>
+<td data-label="作答情况"><span class="cell-value">一错一对，稳定性需新题验证</span></td>
 </tr>
 <tr>
-<td>冲刺·单选25（ID 182253） / 冲刺·单选113（ID 182341）</td>
-<td>内部开发产品升级，复用历史经验</td>
-<td>同卷一错一对，表现不一致</td>
+<td data-label="对应题目"><span class="cell-value">冲刺·单选25（ID 182253） / 冲刺·单选113（ID 182341）</span></td>
+<td data-label="考点"><span class="cell-value">内部开发产品升级，复用历史经验</span></td>
+<td data-label="作答情况"><span class="cell-value">同卷一错一对，表现不一致</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -261,83 +290,83 @@ code{font-size:.9em;background:#edf3ee;padding:2px 5px;border-radius:4px}pre{ove
 <div class="table-scroll" tabindex="0" role="region" aria-label="报告数据表"><table>
 <thead>
 <tr>
-<th>学习类别</th>
-<th>题数</th>
-<th>错题</th>
-<th>错误率</th>
-<th>六卷中有错题的卷数</th>
+<th scope="col">学习类别</th>
+<th scope="col">题数</th>
+<th scope="col">错题</th>
+<th scope="col">错误率</th>
+<th scope="col">六卷中有错题的卷数</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>质量与持续改进</td>
-<td>77</td>
-<td>37</td>
-<td>48.05%</td>
-<td>6</td>
+<td data-label="学习类别"><span class="cell-value">质量与持续改进</span></td>
+<td data-label="题数"><span class="cell-value">77</span></td>
+<td data-label="错题"><span class="cell-value">37</span></td>
+<td data-label="错误率"><span class="cell-value">48.05%</span></td>
+<td data-label="六卷中有错题的卷数"><span class="cell-value">6</span></td>
 </tr>
 <tr>
-<td>合规治理与生命周期</td>
-<td>114</td>
-<td>48</td>
-<td>42.11%</td>
-<td>6</td>
+<td data-label="学习类别"><span class="cell-value">合规治理与生命周期</span></td>
+<td data-label="题数"><span class="cell-value">114</span></td>
+<td data-label="错题"><span class="cell-value">48</span></td>
+<td data-label="错误率"><span class="cell-value">42.11%</span></td>
+<td data-label="六卷中有错题的卷数"><span class="cell-value">6</span></td>
 </tr>
 <tr>
-<td>风险与问题管理</td>
-<td>96</td>
-<td>38</td>
-<td>39.58%</td>
-<td>6</td>
+<td data-label="学习类别"><span class="cell-value">风险与问题管理</span></td>
+<td data-label="题数"><span class="cell-value">96</span></td>
+<td data-label="错题"><span class="cell-value">38</span></td>
+<td data-label="错误率"><span class="cell-value">39.58%</span></td>
+<td data-label="六卷中有错题的卷数"><span class="cell-value">6</span></td>
 </tr>
 <tr>
-<td>进度成本与估算</td>
-<td>73</td>
-<td>28</td>
-<td>38.36%</td>
-<td>6</td>
+<td data-label="学习类别"><span class="cell-value">进度成本与估算</span></td>
+<td data-label="题数"><span class="cell-value">73</span></td>
+<td data-label="错题"><span class="cell-value">28</span></td>
+<td data-label="错误率"><span class="cell-value">38.36%</span></td>
+<td data-label="六卷中有错题的卷数"><span class="cell-value">6</span></td>
 </tr>
 <tr>
-<td>资源组织与采购</td>
-<td>107</td>
-<td>40</td>
-<td>37.38%</td>
-<td>6</td>
+<td data-label="学习类别"><span class="cell-value">资源组织与采购</span></td>
+<td data-label="题数"><span class="cell-value">107</span></td>
+<td data-label="错题"><span class="cell-value">40</span></td>
+<td data-label="错误率"><span class="cell-value">37.38%</span></td>
+<td data-label="六卷中有错题的卷数"><span class="cell-value">6</span></td>
 </tr>
 <tr>
-<td>需求范围与变更</td>
-<td>143</td>
-<td>53</td>
-<td>37.06%</td>
-<td>6</td>
+<td data-label="学习类别"><span class="cell-value">需求范围与变更</span></td>
+<td data-label="题数"><span class="cell-value">143</span></td>
+<td data-label="错题"><span class="cell-value">53</span></td>
+<td data-label="错误率"><span class="cell-value">37.06%</span></td>
+<td data-label="六卷中有错题的卷数"><span class="cell-value">6</span></td>
 </tr>
 <tr>
-<td>敏捷规划交付与角色</td>
-<td>116</td>
-<td>37</td>
-<td>31.90%</td>
-<td>6</td>
+<td data-label="学习类别"><span class="cell-value">敏捷规划交付与角色</span></td>
+<td data-label="题数"><span class="cell-value">116</span></td>
+<td data-label="错题"><span class="cell-value">37</span></td>
+<td data-label="错误率"><span class="cell-value">31.90%</span></td>
+<td data-label="六卷中有错题的卷数"><span class="cell-value">6</span></td>
 </tr>
 <tr>
-<td>团队领导与冲突</td>
-<td>145</td>
-<td>41</td>
-<td>28.28%</td>
-<td>6</td>
+<td data-label="学习类别"><span class="cell-value">团队领导与冲突</span></td>
+<td data-label="题数"><span class="cell-value">145</span></td>
+<td data-label="错题"><span class="cell-value">41</span></td>
+<td data-label="错误率"><span class="cell-value">28.28%</span></td>
+<td data-label="六卷中有错题的卷数"><span class="cell-value">6</span></td>
 </tr>
 <tr>
-<td>商业价值与战略收益</td>
-<td>68</td>
-<td>19</td>
-<td>27.94%</td>
-<td>5</td>
+<td data-label="学习类别"><span class="cell-value">商业价值与战略收益</span></td>
+<td data-label="题数"><span class="cell-value">68</span></td>
+<td data-label="错题"><span class="cell-value">19</span></td>
+<td data-label="错误率"><span class="cell-value">27.94%</span></td>
+<td data-label="六卷中有错题的卷数"><span class="cell-value">5</span></td>
 </tr>
 <tr>
-<td>沟通与干系人</td>
-<td>141</td>
-<td>39</td>
-<td>27.66%</td>
-<td>6</td>
+<td data-label="学习类别"><span class="cell-value">沟通与干系人</span></td>
+<td data-label="题数"><span class="cell-value">141</span></td>
+<td data-label="错题"><span class="cell-value">39</span></td>
+<td data-label="错误率"><span class="cell-value">27.66%</span></td>
+<td data-label="六卷中有错题的卷数"><span class="cell-value">6</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -354,51 +383,51 @@ code{font-size:.9em;background:#edf3ee;padding:2px 5px;border-radius:4px}pre{ove
 <div class="table-scroll" tabindex="0" role="region" aria-label="报告数据表"><table>
 <thead>
 <tr>
-<th>主模式</th>
-<th>次数</th>
-<th>占359道比例</th>
+<th scope="col">主模式</th>
+<th scope="col">次数</th>
+<th scope="col">占359道比例</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>措施未击中问题</td>
-<td>112</td>
-<td>31.20%</td>
+<td data-label="主模式"><span class="cell-value">措施未击中问题</span></td>
+<td data-label="次数"><span class="cell-value">112</span></td>
+<td data-label="占359道比例"><span class="cell-value">31.20%</span></td>
 </tr>
 <tr>
-<td>行动顺序跳步</td>
-<td>81</td>
-<td>22.56%</td>
+<td data-label="主模式"><span class="cell-value">行动顺序跳步</span></td>
+<td data-label="次数"><span class="cell-value">81</span></td>
+<td data-label="占359道比例"><span class="cell-value">22.56%</span></td>
 </tr>
 <tr>
-<td>工具文档边界混淆</td>
-<td>77</td>
-<td>21.45%</td>
+<td data-label="主模式"><span class="cell-value">工具文档边界混淆</span></td>
+<td data-label="次数"><span class="cell-value">77</span></td>
+<td data-label="占359道比例"><span class="cell-value">21.45%</span></td>
 </tr>
 <tr>
-<td>角色与权限错置</td>
-<td>37</td>
-<td>10.31%</td>
+<td data-label="主模式"><span class="cell-value">角色与权限错置</span></td>
+<td data-label="次数"><span class="cell-value">37</span></td>
+<td data-label="占359道比例"><span class="cell-value">10.31%</span></td>
 </tr>
 <tr>
-<td>概念或计算混淆</td>
-<td>32</td>
-<td>8.91%</td>
+<td data-label="主模式"><span class="cell-value">概念或计算混淆</span></td>
+<td data-label="次数"><span class="cell-value">32</span></td>
+<td data-label="占359道比例"><span class="cell-value">8.91%</span></td>
 </tr>
 <tr>
-<td>价值优先级偏差</td>
-<td>11</td>
-<td>3.06%</td>
+<td data-label="主模式"><span class="cell-value">价值优先级偏差</span></td>
+<td data-label="次数"><span class="cell-value">11</span></td>
+<td data-label="占359道比例"><span class="cell-value">3.06%</span></td>
 </tr>
 <tr>
-<td>预测敏捷情境混用</td>
-<td>8</td>
-<td>2.23%</td>
+<td data-label="主模式"><span class="cell-value">预测敏捷情境混用</span></td>
+<td data-label="次数"><span class="cell-value">8</span></td>
+<td data-label="占359道比例"><span class="cell-value">2.23%</span></td>
 </tr>
 <tr>
-<td>多选组合失误</td>
-<td>1</td>
-<td>0.28%</td>
+<td data-label="主模式"><span class="cell-value">多选组合失误</span></td>
+<td data-label="次数"><span class="cell-value">1</span></td>
+<td data-label="占359道比例"><span class="cell-value">0.28%</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -421,152 +450,152 @@ code{font-size:.9em;background:#edf3ee;padding:2px 5px;border-radius:4px}pre{ove
 <div class="table-scroll" tabindex="0" role="region" aria-label="报告数据表"><table>
 <thead>
 <tr>
-<th>题目</th>
-<th>类型</th>
-<th>需要核实的内容</th>
+<th scope="col">题目</th>
+<th scope="col">类型</th>
+<th scope="col">需要核实的内容</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>模考（一）·单选9（ID 181466）</td>
-<td>待复核</td>
-<td>选项写迭代规划会，解析承认应为回顾会；不要记成通用规则。</td>
+<td data-label="题目"><span class="cell-value">模考（一）·单选9（ID 181466）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">选项写迭代规划会，解析承认应为回顾会；不要记成通用规则。</span></td>
 </tr>
 <tr>
-<td>模考（一）·单选10（ID 181467）</td>
-<td>待复核</td>
-<td>解析对PO参加每日协调会的必选/可选表述需要核实，不能据此直接改判。</td>
+<td data-label="题目"><span class="cell-value">模考（一）·单选10（ID 181467）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">解析对PO参加每日协调会的必选/可选表述需要核实，不能据此直接改判。</span></td>
 </tr>
 <tr>
-<td>模考（一）·单选33（ID 181490）</td>
-<td>待复核</td>
-<td>PO与发起人不天然等同；取消产品项与终止项目的授权需区分。</td>
+<td data-label="题目"><span class="cell-value">模考（一）·单选33（ID 181490）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">PO与发起人不天然等同；取消产品项与终止项目的授权需区分。</span></td>
 </tr>
 <tr>
-<td>模考（二）·单选63（ID 181700）</td>
-<td>待复核</td>
-<td>团队自行安排执行与PO排序产品待办的措辞含混。</td>
+<td data-label="题目"><span class="cell-value">模考（二）·单选63（ID 181700）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">团队自行安排执行与PO排序产品待办的措辞含混。</span></td>
 </tr>
 <tr>
-<td>模考（二）·单选115（ID 181752）</td>
-<td>待复核</td>
-<td>给出的A—C、B—C关系不足以唯一推导A—B的完成到完成关系；本题用户按键答对。</td>
+<td data-label="题目"><span class="cell-value">模考（二）·单选115（ID 181752）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">给出的A—C、B—C关系不足以唯一推导A—B的完成到完成关系；本题用户按键答对。</span></td>
 </tr>
 <tr>
-<td>模考（二）·单选166（ID 181803）</td>
-<td>待复核</td>
-<td>仅凭混合生命周期不足以排除持续参与而唯一规定定期参与。</td>
+<td data-label="题目"><span class="cell-value">模考（二）·单选166（ID 181803）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">仅凭混合生命周期不足以排除持续参与而唯一规定定期参与。</span></td>
 </tr>
 <tr>
-<td>模考（二）·多选8（ID 181815）</td>
-<td>待复核</td>
-<td>用“无法保证按期”排除增量交付降低风险的论据不足；保留原键。</td>
+<td data-label="题目"><span class="cell-value">模考（二）·多选8（ID 181815）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">用“无法保证按期”排除增量交付降低风险的论据不足；保留原键。</span></td>
 </tr>
 <tr>
-<td>模考（三）·单选82（ID 181899）</td>
-<td>待复核</td>
-<td>材料替换的前瞻成本影响，不宜只凭EV分析判断，排除成本预测的理由过强。</td>
+<td data-label="题目"><span class="cell-value">模考（三）·单选82（ID 181899）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">材料替换的前瞻成本影响，不宜只凭EV分析判断，排除成本预测的理由过强。</span></td>
 </tr>
 <tr>
-<td>模考（三）·多选3（ID 181991）</td>
-<td>待复核</td>
-<td>团队能否压缩工期是可行性信息，题干对排除该选项的依据不足。</td>
+<td data-label="题目"><span class="cell-value">模考（三）·多选3（ID 181991）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">团队能否压缩工期是可行性信息，题干对排除该选项的依据不足。</span></td>
 </tr>
 <tr>
-<td>强化（一）·单选127（ID 175379）</td>
-<td>明确数据错误</td>
-<td>题干问合同类型，A—D却都是敏捷改进措施；解释讨论固定总价合同。选项串题，不能诊断合同知识。</td>
+<td data-label="题目"><span class="cell-value">强化（一）·单选127（ID 175379）</span></td>
+<td data-label="类型"><span class="cell-value">明确数据错误</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">原第127题选项与第178题完全相同；2026-11-20已按用户确认改为FFP、FPEPA、CPIF、CPFF，正确答案A。历史作答及复核标记保留，不据纠正后的选项重新推断当时表现。</span></td>
 </tr>
 <tr>
-<td>强化（一）·单选151（ID 175403）</td>
-<td>待复核</td>
-<td>跨国合法销售的可行性及加快审批的治理边界信息不足。</td>
+<td data-label="题目"><span class="cell-value">强化（一）·单选151（ID 175403）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">跨国合法销售的可行性及加快审批的治理边界信息不足。</span></td>
 </tr>
 <tr>
-<td>强化（一）·单选169（ID 175421）</td>
-<td>明确解析错误</td>
-<td>本题按键答对，但解析把SV阈值写成1；SV=EV−PV，以0为界。SPI=EV/PV才以1为界。SV通常是金额，不直接给出延期天数。</td>
+<td data-label="题目"><span class="cell-value">强化（一）·单选169（ID 175421）</span></td>
+<td data-label="类型"><span class="cell-value">明确解析错误</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">本题按键答对，但解析把SV阈值写成1；SV=EV−PV，以0为界。SPI=EV/PV才以1为界。SV通常是金额，不直接给出延期天数。</span></td>
 </tr>
 <tr>
-<td>强化（一）·单选174（ID 175426）</td>
-<td>待复核</td>
-<td>RAM与RACI存在包含关系，题干没有充分条件排除RAM。</td>
+<td data-label="题目"><span class="cell-value">强化（一）·单选174（ID 175426）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">RAM与RACI存在包含关系，题干没有充分条件排除RAM。</span></td>
 </tr>
 <tr>
-<td>强化（二）·单选115（ID 175547）</td>
-<td>待复核</td>
-<td>经济衰退可能威胁收益不等于收益已失效，建议终止前提不足；也不能因此改判用户所选D正确。</td>
+<td data-label="题目"><span class="cell-value">强化（二）·单选115（ID 175547）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">经济衰退可能威胁收益不等于收益已失效，建议终止前提不足；也不能因此改判用户所选D正确。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选11（ID 182239）</td>
-<td>待复核</td>
-<td>将资源计划直接当作预测型做法而排除，情境依据不足。</td>
+<td data-label="题目"><span class="cell-value">冲刺·单选11（ID 182239）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">将资源计划直接当作预测型做法而排除，情境依据不足。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选20（ID 182248）</td>
-<td>待复核</td>
-<td>潜在利益冲突的事实前提与风险定性评估的适用性不够清楚。</td>
+<td data-label="题目"><span class="cell-value">冲刺·单选20（ID 182248）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">潜在利益冲突的事实前提与风险定性评估的适用性不够清楚。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选32（ID 182260）</td>
-<td>待复核</td>
-<td>AI法规变化情境下，排除法律专业咨询的依据不足。</td>
+<td data-label="题目"><span class="cell-value">冲刺·单选32（ID 182260）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">AI法规变化情境下，排除法律专业咨询的依据不足。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选58（ID 182286）</td>
-<td>待复核</td>
-<td>PO与团队共同讨论排序有合理性，必须先内部会议的前提不充分。</td>
+<td data-label="题目"><span class="cell-value">冲刺·单选58（ID 182286）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">PO与团队共同讨论排序有合理性，必须先内部会议的前提不充分。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选69（ID 182297）</td>
-<td>待复核</td>
-<td>合同差异若已发生，风险与问题的状态边界需要核对。</td>
+<td data-label="题目"><span class="cell-value">冲刺·单选69（ID 182297）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">合同差异若已发生，风险与问题的状态边界需要核对。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选70（ID 182298）</td>
-<td>待复核</td>
-<td>不能仅凭迭代语境就免除全部变更控制，需明确合同和治理约束。</td>
+<td data-label="题目"><span class="cell-value">冲刺·单选70（ID 182298）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">不能仅凭迭代语境就免除全部变更控制，需明确合同和治理约束。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选81（ID 182309）</td>
-<td>待复核</td>
-<td>解析把残余风险表述为无需继续分析过度绝对；用户所选“新风险”仍有概念区分问题。</td>
+<td data-label="题目"><span class="cell-value">冲刺·单选81（ID 182309）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">解析把残余风险表述为无需继续分析过度绝对；用户所选“新风险”仍有概念区分问题。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选86（ID 182314）</td>
-<td>待复核</td>
-<td>重大人员流失后直接确定延期，缺少影响评估前提。</td>
+<td data-label="题目"><span class="cell-value">冲刺·单选86（ID 182314）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">重大人员流失后直接确定延期，缺少影响评估前提。</span></td>
 </tr>
 <tr>
-<td>冲刺·单选109（ID 182337）</td>
-<td>待复核</td>
-<td>暂停争吵降温同时涉及自我管理与关系管理，题干区分不足。</td>
+<td data-label="题目"><span class="cell-value">冲刺·单选109（ID 182337）</span></td>
+<td data-label="类型"><span class="cell-value">待复核</span></td>
+<td data-label="需要核实的内容"><span class="cell-value">暂停争吵降温同时涉及自我管理与关系管理，题干区分不足。</span></td>
 </tr>
 </tbody>
 </table></div>
 <div class="table-scroll" tabindex="0" role="region" aria-label="报告数据表"><table>
 <thead>
 <tr>
-<th>新增图表复核题</th>
-<th>类型</th>
-<th>说明</th>
+<th scope="col">新增图表复核题</th>
+<th scope="col">类型</th>
+<th scope="col">说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>模考（一）·单选152</td>
-<td>明确图表数据冲突</td>
-<td>中英文成本与储备数字不同；中文成本方向与题干相反，且表列括号38000。中文把收益实现时点/关键里程碑也混译。不能把计划成本直接当EV，从计划减实际推出挣值成本偏差。A在重新权衡支出与长期收益层面仍合理，不能据此判用户错。</td>
+<td data-label="新增图表复核题"><span class="cell-value">模考（一）·单选152</span></td>
+<td data-label="类型"><span class="cell-value">明确图表数据冲突</span></td>
+<td data-label="说明"><span class="cell-value">中英文成本与储备数字不同；中文成本方向与题干相反，且表列括号38000。中文把收益实现时点/关键里程碑也混译。不能把计划成本直接当EV，从计划减实际推出挣值成本偏差。A在重新权衡支出与长期收益层面仍合理，不能据此判用户错。</span></td>
 </tr>
 <tr>
-<td>模考（二）·单选35</td>
-<td>明确图表数据冲突</td>
-<td>中文EV使成本超支，英文EV使成本节约，两种成本方向相反；赶工费用中文150000、英文130000也不一致。不能把中文版表格当一致的计算题。</td>
+<td data-label="新增图表复核题"><span class="cell-value">模考（二）·单选35</span></td>
+<td data-label="类型"><span class="cell-value">明确图表数据冲突</span></td>
+<td data-label="说明"><span class="cell-value">中文EV使成本超支，英文EV使成本节约，两种成本方向相反；赶工费用中文150000、英文130000也不一致。不能把中文版表格当一致的计算题。</span></td>
 </tr>
 <tr>
-<td>模考（三）·单选78</td>
-<td>明确图表数据冲突</td>
-<td>两图时间序列、类别条形及里程碑排布不同；中文图缺少题干所述可持续性缺陷上升的核心信号。不能只凭总高度下降忽略局部恶化，也不能把中文图中没有的上升趋势读出来。</td>
+<td data-label="新增图表复核题"><span class="cell-value">模考（三）·单选78</span></td>
+<td data-label="类型"><span class="cell-value">明确图表数据冲突</span></td>
+<td data-label="说明"><span class="cell-value">两图时间序列、类别条形及里程碑排布不同；中文图缺少题干所述可持续性缺陷上升的核心信号。不能只凭总高度下降忽略局部恶化，也不能把中文图中没有的上升趋势读出来。</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -576,46 +605,46 @@ code{font-size:.9em;background:#edf3ee;padding:2px 5px;border-radius:4px}pre{ove
 <div class="table-scroll" tabindex="0" role="region" aria-label="报告数据表"><table>
 <thead>
 <tr>
-<th>日期</th>
-<th>安排</th>
-<th>验收与产出</th>
+<th scope="col">日期</th>
+<th scope="col">安排</th>
+<th scope="col">验收与产出</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>11/20—11/24</td>
-<td>每天一个主题：需求变更、质量、风险储备、治理生命周期、资源采购。每天20～30道首见题＋5～10道旧错题。</td>
-<td>每题先口述阶段/方法、当前问题、权限、顺序；旧题重做不计入首见正确率。</td>
+<td data-label="日期"><span class="cell-value">11/20—11/24</span></td>
+<td data-label="安排"><span class="cell-value">每天一个主题：需求变更、质量、风险储备、治理生命周期、资源采购。每天20～30道首见题＋5～10道旧错题。</span></td>
+<td data-label="验收与产出"><span class="cell-value">每题先口述阶段/方法、当前问题、权限、顺序；旧题重做不计入首见正确率。</span></td>
 </tr>
 <tr>
-<td>11/25</td>
-<td>完整首见模拟1：180题、240分钟，闭卷，记录每60题累计用时与信心。</td>
-<td>记录总分、各主题、至少10道多选的表现；当天或次日复盘低信心答对题。</td>
+<td data-label="日期"><span class="cell-value">11/25</span></td>
+<td data-label="安排"><span class="cell-value">完整首见模拟1：180题、240分钟，闭卷，记录每60题累计用时与信心。</span></td>
+<td data-label="验收与产出"><span class="cell-value">记录总分、各主题、至少10道多选的表现；当天或次日复盘低信心答对题。</span></td>
 </tr>
 <tr>
-<td>11/26—11/29</td>
-<td>按模拟1薄弱点练每天20～30道首见题；穿插多选、图形、AI/可持续与业务环境。</td>
-<td>完成一页工具/文档辨别卡、一页角色授权卡；累计至少30道首见多选。</td>
+<td data-label="日期"><span class="cell-value">11/26—11/29</span></td>
+<td data-label="安排"><span class="cell-value">按模拟1薄弱点练每天20～30道首见题；穿插多选、图形、AI/可持续与业务环境。</span></td>
+<td data-label="验收与产出"><span class="cell-value">完成一页工具/文档辨别卡、一页角色授权卡；累计至少30道首见多选。</span></td>
 </tr>
 <tr>
-<td>11/30</td>
-<td>完整首见模拟2：180题、240分钟，尽量使用不同来源且匹配新版的试卷。</td>
-<td>与模拟1相比，检查改善是否出现在首见题；已见题单独计数。</td>
+<td data-label="日期"><span class="cell-value">11/30</span></td>
+<td data-label="安排"><span class="cell-value">完整首见模拟2：180题、240分钟，尽量使用不同来源且匹配新版的试卷。</span></td>
+<td data-label="验收与产出"><span class="cell-value">与模拟1相比，检查改善是否出现在首见题；已见题单独计数。</span></td>
 </tr>
 <tr>
-<td>12/1—12/3</td>
-<td>每天30～40道限时混合首见题，聚焦仍高错率的2类；复测此前规则的变式。</td>
-<td>争取连续两次60题抽测≥45对，核心主题与多选累计正确率≥70%。</td>
+<td data-label="日期"><span class="cell-value">12/1—12/3</span></td>
+<td data-label="安排"><span class="cell-value">每天30～40道限时混合首见题，聚焦仍高错率的2类；复测此前规则的变式。</span></td>
+<td data-label="验收与产出"><span class="cell-value">争取连续两次60题抽测≥45对，核心主题与多选累计正确率≥70%。</span></td>
 </tr>
 <tr>
-<td>12/4</td>
-<td>45～60分钟轻复盘：公式、授权、工具、复核后已确认的规则；确认准考证与现场要求。</td>
-<td>停止增加大量新内容，保证睡眠。</td>
+<td data-label="日期"><span class="cell-value">12/4</span></td>
+<td data-label="安排"><span class="cell-value">45～60分钟轻复盘：公式、授权、工具、复核后已确认的规则；确认准考证与现场要求。</span></td>
+<td data-label="验收与产出"><span class="cell-value">停止增加大量新内容，保证睡眠。</span></td>
 </tr>
 <tr>
-<td>12/5</td>
-<td>按准考证安排参加线下考试。</td>
-<td>练习目标是约210分钟完成作答、保留约30分钟核对；按案例长度和现场规则调整，不把每题时间设成硬上限。</td>
+<td data-label="日期"><span class="cell-value">12/5</span></td>
+<td data-label="安排"><span class="cell-value">按准考证安排参加线下考试。</span></td>
+<td data-label="验收与产出"><span class="cell-value">练习目标是约210分钟完成作答、保留约30分钟核对；按案例长度和现场规则调整，不把每题时间设成硬上限。</span></td>
 </tr>
 </tbody>
 </table></div>
@@ -645,4 +674,17 @@ code{font-size:.9em;background:#edf3ee;padding:2px 5px;border-radius:4px}pre{ove
 <li><strong>PMP逐题复盘.html</strong>：本地打开，可按卷、知识点、模式筛选1080题，默认仅显示380道错题；答案折叠，适合复测。包含26题复核提醒、12题逐图核验和4组近重复标记。21张图片已内嵌，断网可看；可点“图题核验（12题）”直接查看所有带图题。</li>
 <li><strong>PMP核验数据.json</strong>：原始答案/选择、逐题标签、得分汇总、来源哈希、复核池、重复对和覆盖限制，便于复查。</li>
 <li>源文件保持原样。报告没有联系老师、修改平台记录或替你作出报考安排。</li>
-</ul></article></div></main></body></html>
+</ul></article></div></main>
+<script id="mobile-report-navigation">
+(() => {
+  const contents = document.querySelector('.contents');
+  const mobile = matchMedia('(max-width:650px)');
+  const updateContents = () => { contents.open = !mobile.matches; };
+  updateContents();
+  mobile.addEventListener('change', updateContents);
+  contents.querySelector('nav').addEventListener('click', event => {
+    if (mobile.matches && event.target.closest('a[href^="#"]')) contents.open = false;
+  });
+})();
+</script>
+</body></html>
