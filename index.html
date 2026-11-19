@@ -1075,7 +1075,7 @@ libraryStart.addEventListener('click',async()=>{
   questionSet.disabled=true;
   libraryStatus.textContent='正在加载题集…';
   try{
-    const response=await fetch('./questions/'+encodeURIComponent(set)+'.json');
+    const response=await fetch('./questions/'+encodeURIComponent(set)+'.json',{cache:'no-cache'});
     if(!response.ok)throw new Error('题集加载失败，请检查网络后重试。');
     const parsed=auraBank(await response.json());
     if(!parsed?.list.length||parsed.skipped)throw new Error('题集内容不完整，请稍后重试。');
